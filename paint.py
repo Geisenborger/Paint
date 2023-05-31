@@ -25,6 +25,9 @@ def linea_h():
     ## Mostrar la superficie en la pantalla
     pygame.display.flip()
 
+def colors_ls():
+    print("1. black\n2. white\n3. red\n4. green\n5. blue\n6. yellow\n7. magenta\n")
+
 def linea_v():
     for i in range(0,100):
         surface.set_at((100, 200 + i), color)
@@ -44,5 +47,5 @@ while True:
         linea_h()
     if cmd == "linea -v":
         linea_v()
-    if cmd == "dT1":
-        drawTriangle1()
+    if cmd == "colors ls":
+        colors_ls()
